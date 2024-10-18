@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, TextInput, Image, FlatList, ScrollView, Pressable } from 'react-native';
-import PersonIcon from '../assets/icons/PersonIcon';
-import BellIcon from '../assets/icons/BellIcon';
-import SearchIcon from '../assets/icons/SearchIcon';
+import PersonIcon from '../assets/icons/PersonIcon.jsx';
+import BellIcon from '../assets/icons/BellIcon.jsx';
+import SearchIcon from '../assets/icons/SearchIcon.jsx';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 
@@ -14,7 +14,7 @@ interface mealData {
   strMealThumb?: string;
 }
 
-export default function Home() {
+export default function HomeScreen() {
   let [category, setCategory] = useState<categoryData[]>([]);
   let [items, setItems] = useState<mealData[]>([]);
   let [recipe, setRecipe] = useState<string>();
